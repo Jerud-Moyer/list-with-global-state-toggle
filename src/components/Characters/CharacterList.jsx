@@ -8,6 +8,7 @@ import { useThemeType } from '../../hooks/themes';
 
 const CharacterList = ({ page }) => {
   const { loading, characters } = useCharacters(page);
+  const theme = useThemeType();
   if(loading) return <h1>Loading.1.2.3</h1>;
 
   const characterElements = characters.map(character => (
@@ -18,10 +19,9 @@ const CharacterList = ({ page }) => {
     </li>
   ));
 
-  const theme = useThemeType();
   
   return (
-    <div className={styles.[theme]}>
+    <div className={styles[theme]}>
       <Header />
       <ul data-testid="characters" className={styles.CharacterList}>
         {characterElements}
