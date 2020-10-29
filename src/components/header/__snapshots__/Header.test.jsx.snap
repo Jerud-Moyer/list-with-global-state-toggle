@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterList component renders Character 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="Header"
+    >
+      <h1>
+        BENDERdex
+      </h1>
+      <button>
+        Day / Night
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
