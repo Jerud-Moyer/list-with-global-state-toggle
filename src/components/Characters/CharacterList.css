@@ -1,0 +1,20 @@
+.day {
+  background-color: lightblue;
+  color: midnightblue;
+
+}
+
+.night {
+  background-color: midnightblue;
+  color: lightblue;
+}
+
+.CharacterList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  list-style-type: none;
+  text-align: center;
+
+  
+}
